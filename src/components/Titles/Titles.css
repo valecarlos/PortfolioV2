@@ -1,0 +1,18 @@
+.title{
+    color: #00CBFF;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    padding: 5px;
+    display: inline-block;
+}
+
+.title::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50%;
+    bottom: 0;
+    left: 25%;
+    background-color: #00CBFF;
+}

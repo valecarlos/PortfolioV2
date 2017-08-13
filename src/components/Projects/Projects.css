@@ -1,0 +1,194 @@
+.project-title{
+    padding: 20px;
+    background: url('./../../assets/img/title-pattern.png');
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.background-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+.centered-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.centered-text h3{
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.centered-text p{
+    font-size: 18px;
+}
+
+.right-wrapper{
+    width: 50%;
+    float: left;
+    height: 500px;
+}
+
+.first-box{
+    width: 50%;
+    float: left;
+    position: relative;
+    height: 500px;
+    background-image: url('./../../assets/img/applications.png');
+}
+
+
+.second-box{
+    position: relative;
+    height: 250px;
+    background-image: url('./../../assets/img/websites.png');
+     background-size: cover; 
+}
+
+.third-box{
+    width: 50%;
+    float: left;
+    position: relative;
+    height: 250px;
+    background-image: url('./../../assets/img/components.png');
+     background-size: cover; 
+}
+
+.animation-box{
+    width: 50%;
+    float: left;
+    height: 250px;
+    background: #262626;
+    color: white;
+}
+
+.animation-box h4{
+    padding: 7px 0px 11px 0px; 
+}
+/******animacion  */
+
+.resp-animation{
+	margin: auto;
+	margin-bottom: 30px;
+	overflow: hidden;
+	height: 200px;
+	width: 300px;
+	background-color: white;
+	text-align: center;
+	animation-name: resp;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-delay: 2s;
+}
+
+.resp-animation .resp-header{
+	height: 20px;
+	margin-bottom: 10px;
+    background-color: #69645c;
+    position: relative;
+}
+
+.resp-animation .resp-header .mini-header{
+    width: 60px;
+    position: absolute;
+    top: 7px;
+    height: 6px;
+    background-color: lightgray;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.mini-menu{
+	float: right;
+	margin: 4px;
+	visibility: hidden;
+	animation-name: ani-mini-menu;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-delay: 2s;
+}
+
+.mini-menu-bar{
+	background-color: white;
+	display: block;
+	width: 15px;
+	height: 2px;
+	margin-top: 2px;
+	border-radius: 2px;
+}
+
+.resp-animation .resp-content{
+	height: 60px;
+	width: 20%;
+	min-width: 80px;
+	display: inline-block;
+	background-color: blue;
+	margin: 2px;
+	transition: all 0.3s ease-in-out;
+	animation-name: ani-resp-con;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-delay: 2s;
+}
+
+.resp-animation .resp-content:hover{
+	opacity: 0.6;
+}
+
+.resp-animation .resp-content:nth-child(2){
+  background-color: rgb(31,100,247);
+}
+
+.resp-animation .resp-content:nth-child(3){
+  background-color: rgb(31,176,247);
+}
+
+.resp-animation .resp-content:nth-child(4){
+  background-color: rgb(75,176,247);
+}
+
+.resp-animation .resp-content:nth-child(5){
+  background-color: rgb(31,140,247);
+}
+
+.resp-animation .resp-content:nth-child(6){
+  background-color: rgb(75,120,247);
+}
+
+@keyframes resp{
+  0%   {width:300px; border-radius: 0px;}
+  26.6%   {width:300px; border-radius: 0px;}
+  36.6%   {width:210px; border-radius: 3px;}
+  63.2%   {width:210px; border-radius: 3px;}
+  73.2% {width:130px; border-radius: 6px;}
+  100% {width:130px; border-radius: 6px;}
+}
+
+@keyframes ani-resp-con{
+  0%   {width:20%;}
+  26.6%   {width:20%;}
+  36.6%   {width:45%;}
+  63.2%   {width:45%;}
+  73.2% {width:80%;}
+  100% {width:80%;}
+}
+
+@keyframes ani-mini-menu{
+  0%   {visibility:hidden;}
+  26.6%   {visibility:hidden;}
+  36.6%   {visibility:visible;}
+  63.2%   {visibility:visible;}
+  73.2% {visibility:visible;}
+  100% {visibility:visible;}
+}

@@ -1,0 +1,35 @@
+.stackoverflow-logo{
+    height: 60px;
+}
+.reputation{
+    font-size: 28px;
+    color: #3a3a3a;
+}
+.badges{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    max-width: 300px;
+    justify-content: center;
+}
+.badge{
+    display: inline-block;
+    margin: 0px 10px;
+}
+.silverBadge{
+    display: inline-block;
+    background-color: #B4B8BC;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 2px;
+}
+
+.bronzeBadge{
+    display: inline-block;
+    background-color: #D1A684;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 2px;
+}

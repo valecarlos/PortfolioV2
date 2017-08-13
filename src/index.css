@@ -1,5 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Crete+Round|Poiret+One|Roboto+Condensed:300,400,700|Roboto+Mono:300,400,500,700|Saira+Semi+Condensed:100,300,400,500,700');
+
+*{
+  /* font-family: 'Roboto Condensed', sans-serif; */
+  /* font-family: 'Saira Semi Condensed', sans-serif; */
+   font-family: 'Roboto Mono', monospace;  
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a{
+  text-decoration: none;
+}
+
+.main-font-color{
+  color: #00CBFF;
+}
+.second-font-color{
+  color: white;
+}
+
+.hero-image{
+  height: 100vh;
+  position: relative;
+  background: url('./assets/img/wall.jpg') -50px -50px no-repeat;
+  background-size: calc(100% + 50px);
+}
+.transparent-overlay{
+  height: 100vh;
+  background: rgba(0,0,0,0.65);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.cvslogo{
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.cvslogo img{
+  width: 80px;
+}
+.intro-text{
+  text-align: left;
+  position: absolute;
+  bottom: 15%;
+  left: 15%;
+}
+
+.intro-text h1{
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-size: 60px;
+}
+
+.intro-text h4{
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.intro-text p{
+  font-size: 18px;
 }

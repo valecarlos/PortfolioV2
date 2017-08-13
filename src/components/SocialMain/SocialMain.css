@@ -1,0 +1,13 @@
+.social-main-container{
+    text-align: center;
+    padding: 20px;
+    width: 70%;
+}
+.github-social{
+    display: inline-block;
+    width: 50%;
+}
+.stackoverflow-social{
+    display: inline-block;
+    width: 50%;
+}

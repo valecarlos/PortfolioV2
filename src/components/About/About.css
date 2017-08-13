@@ -1,0 +1,39 @@
+.about-container{
+    background-color: white;
+    background-size: contain;
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url('./../../assets/img/carlos.png');
+    text-align: left;
+    padding-top: 25px;
+}
+.about-text{
+    display: inline-block;
+    width: 70%;
+    text-align: center;
+}
+
+.about-text p{
+    margin: 20px auto 0px;
+    max-width: 420px;
+    line-height: 170%;
+}
+
+.banner{
+    background-color: #00B9E8;
+    padding: 25px;
+    text-align: center;
+    color: white;
+    display: block;
+}
+.banner span{
+    display: inline-block;
+    vertical-align: top;
+    line-height: 40px;
+}
+
+.twitter-logo{
+    height: 40px;
+    margin-right: 5px; 
+}
