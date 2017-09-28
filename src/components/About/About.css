@@ -2,11 +2,10 @@
     background-color: white;
     background-size: contain;
     background-position: right;
-    /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-image: url('./../../assets/img/carlos.png');
     text-align: left;
-    padding-top: 25px;
+    padding-top: 45px;
 }
 .about-text{
     display: inline-block;
@@ -21,6 +20,7 @@
 }
 
 .banner{
+    margin-top: 20px;
     background-color: #00B9E8;
     padding: 25px;
     text-align: center;

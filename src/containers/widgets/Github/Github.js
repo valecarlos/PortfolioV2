@@ -34,7 +34,7 @@ export default class Github extends Component {
   }
   render () {
     return (
-      <div className="github-container">
+      <a href="https://github.com/valecarlos" className="github-container">
         <div>
           <img className="github-mark" src={githubMark} alt="github mark"/>
           <img className="github-logo" src={githubLogo} alt="github logo"/>
@@ -42,7 +42,7 @@ export default class Github extends Component {
         <div className="github-info">
           <span>{this.state.repos ? this.state.repos.profile.public_repos : 0}</span> Repositories
         </div>
-      </div>
+      </a>
     )
   }
 }

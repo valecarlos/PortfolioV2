@@ -1,3 +1,6 @@
+.github-container{
+    display: block
+}
 .github-logo{
     height: 60px;
 }

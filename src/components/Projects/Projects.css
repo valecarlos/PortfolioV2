@@ -1,5 +1,5 @@
 .project-title{
-    padding: 20px;
+    padding: 20px 20px 40px 20px;
     background: url('./../../assets/img/title-pattern.png');
     text-align: center;
     background-attachment: fixed;
@@ -30,22 +30,32 @@
     font-size: 18px;
 }
 
+.projects-wrapper{
+    background: url('./../../assets/img/title-pattern.png');
+    background-attachment: fixed;
+    padding: 0px 20px 20px 20px;
+}
+
+
 .right-wrapper{
-    width: 50%;
+    width: calc(50% - 80px);
+    margin: 40px;
     float: left;
-    height: 500px;
+    height: 520px;
 }
 
 .first-box{
-    width: 50%;
+    width: calc(50% - 80px);
+    margin: 40px;
     float: left;
     position: relative;
-    height: 500px;
+    height: 520px;
     background-image: url('./../../assets/img/applications.png');
 }
 
 
 .second-box{
+    margin-bottom: 10px;
     position: relative;
     height: 250px;
     background-image: url('./../../assets/img/websites.png');
@@ -53,16 +63,18 @@
 }
 
 .third-box{
-    width: 50%;
+    margin: 10px 0px 0px 10px;
+    width: calc(50% - 10px);
     float: left;
     position: relative;
     height: 250px;
     background-image: url('./../../assets/img/components.png');
-     background-size: cover; 
+    background-size: cover; 
 }
 
 .animation-box{
-    width: 50%;
+    margin: 10px 10px 0px 00px;
+    width: calc(50% - 10px);
     float: left;
     height: 250px;
     background: #262626;

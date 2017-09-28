@@ -33,7 +33,7 @@ export default class StackOverflow extends Component {
   }
   render () {
     return (
-      <div className="stackoverflow-container">
+      <a href="https://stackoverflow.com/users/4224574/randomguy04" className="stackoverflow-container">
         <div>
           <img className="stackoverflow-logo" src={StackOverflowLogo} alt="StackOverflow logo"/>
         </div>
@@ -50,7 +50,7 @@ export default class StackOverflow extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </a>
     )
   }
 }

@@ -1,3 +1,7 @@
+.stackoverflow-container{
+    display: block
+}
+
 .stackoverflow-logo{
     height: 60px;
 }

@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import './Projects.css';
+import './Projects.css'
 import Titles from './../Titles/Titles'
 
 export default class Projects extends Component {
