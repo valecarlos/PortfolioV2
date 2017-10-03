@@ -1,0 +1,19 @@
+.subtitle{
+    color: #00CBFF;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    padding: 5px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.subtitle::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50%;
+    bottom: -8px;
+    left: 25%;
+    background-color: #00CBFF;
+}

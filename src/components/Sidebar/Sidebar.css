@@ -1,0 +1,63 @@
+aside{
+    display: none;
+    position: fixed;
+    width: 438px;
+    background: url('./../../assets/img/title-pattern.png');
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    text-align: center;
+}
+
+aside.show{
+    display: block
+}
+
+aside .close{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+aside .aside-logo{
+    margin-top: 70px;
+}
+
+aside .aside-logo img{
+    width: 65px;
+}
+
+aside .aside-links{
+    margin-top: 50px; 
+    color: white;
+}
+
+aside .aside-links li:hover{
+    background-color: rgba(0,0,0,0.6);
+}
+
+aside .aside-links a{
+    padding: 15px 10px;
+    display: block;
+}
+
+aside .social-container{
+    position: absolute;
+    bottom: 30px;
+}
+
+aside .poll-options{
+    color: white;
+}
+
+aside .poll-options li{
+    width: 33.33334%;
+    display: inline-block;
+    padding: 15px 0px;
+    background-color: rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+aside .poll-options li:hover{
+    background-color: rgba(0,0,0,0.6);
+}
