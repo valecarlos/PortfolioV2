@@ -8,6 +8,8 @@ export default class Sidebar extends Component {
     var titleText = 'Help me improve my portfolio'
     return (
       <aside className="show">
+          <div className="close-nav">
+          </div>
           <div className="aside-logo">
             <img src={logo} alt="Carlos Valencia Logo"/>
           </div>
@@ -29,16 +31,35 @@ export default class Sidebar extends Component {
             </p>
             <ul className="poll-options">
               <li>
-                not a fan
+                <input id="down" type="radio" value="down" name="radioPoll"/>
+                <label htmlFor="down">Not a fan</label>
               </li>
               <li>
-                It's ok
+                <input id="neutral" type="radio" value="neutral" name="radioPoll"/>
+                <label htmlFor="neutral">It's ok</label>
               </li>
               <li>
-                Love it!
+                <input id="up" type="radio" value="up" name="radioPoll"/>
+                <label htmlFor="up">Love it!</label>
               </li>
             </ul>
           </div>
+          <div className="poll-alert">
+            <p>
+              Thanks for your vote!
+            </p>
+          </div>
+          <ul className="social-container">
+            <li>
+              <a href="#">G</a>
+            </li>
+            <li>
+              <a href="#">L</a>
+            </li>
+            <li>
+              <a href="#">S</a>
+            </li>
+          </ul>
       </aside>
     )
   }

@@ -1,22 +1,49 @@
 aside{
     display: none;
     position: fixed;
-    width: 438px;
+    width: 400px;
     background: url('./../../assets/img/title-pattern.png');
     top: 0px;
     bottom: 0px;
     right: 0px;
     text-align: center;
+    box-shadow: -3px 2px 10px rgba(0,0,0,0.5);
+    overflow: auto;
 }
 
 aside.show{
     display: block
 }
 
-aside .close{
+aside .close-nav{
     position: absolute;
     top: 20px;
     left: 20px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+aside .close-nav::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: white;
+    top: 50%;
+    left: 0px;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+aside .close-nav::before{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: white;
+    top: 50%;
+    left: 0px;
+    position: absolute;
+    transform: rotate(-45deg);
 }
 
 aside .aside-logo{
@@ -24,7 +51,7 @@ aside .aside-logo{
 }
 
 aside .aside-logo img{
-    width: 65px;
+    width: 45px;
 }
 
 aside .aside-links{
@@ -44,6 +71,28 @@ aside .aside-links a{
 aside .social-container{
     position: absolute;
     bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+}
+
+aside .social-container li{
+    width: 33.33334%;
+    display: inline-block;
+}
+aside .social-container li a{
+    display: block;
+    padding: 10px;
+    color: white;
+}
+
+aside .poll-container{
+    margin-top: 80px;
+}
+
+aside .poll-container p{
+    padding: 10px;
+    font-size: 14px;
+    color: white;
 }
 
 aside .poll-options{
@@ -53,11 +102,31 @@ aside .poll-options{
 aside .poll-options li{
     width: 33.33334%;
     display: inline-block;
-    padding: 15px 0px;
     background-color: rgba(0,0,0,0.3);
-    cursor: pointer;
 }
 
 aside .poll-options li:hover{
     background-color: rgba(0,0,0,0.6);
+}
+
+aside .poll-options li input[type=radio]{
+    display: none;
+}
+
+aside .poll-options li input[type=radio] + label{
+    width: 100%;
+    padding: 15px 0px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+aside .poll-options li input[type=radio]:checked + label{
+    background-color: rgba(0, 204, 255, 0.63);
+}
+
+aside .poll-alert{
+    color: white;
+    background-color: #43c265;
+    padding: 15px 10px;
+    font-size: 14px;
 }

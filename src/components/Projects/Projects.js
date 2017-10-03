@@ -6,7 +6,7 @@ export default class Projects extends Component {
   render () {
     var titleText = 'PROJECTS'
     return (
-        <div>
+        <div id="projects">
           <div className="project-title">
             <Titles titleText={titleText} />
           </div>

@@ -8,7 +8,7 @@ export default class About extends Component {
   render () {
     var titleText = 'ABOUT'
     return (
-      <div className="about-container">
+      <div className="about-container" id="about">
         <div className="about-text">
           <Titles titleText={titleText} />
           <p>I am currently working on improving my skills, most recently, I have decided to give back to the community of StackOverflow and contribute whenever I have the chance.</p>
