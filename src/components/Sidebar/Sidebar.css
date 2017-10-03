@@ -1,5 +1,23 @@
+.burger-menu{
+    width: 25px;
+    height: 15px;
+    position: absolute;
+    cursor: pointer;
+    position: fixed;
+    right: 35px;
+    top: 20px;
+}
+.burger-menu span{
+    width: 100%;
+    display: block;
+    margin: 4px 0px;
+    height: 3px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+}
 aside{
-    display: none;
+    /* display: none; */
     position: fixed;
     width: 400px;
     background: url('./../../assets/img/title-pattern.png');
@@ -9,10 +27,13 @@ aside{
     text-align: center;
     box-shadow: -3px 2px 10px rgba(0,0,0,0.5);
     overflow: auto;
+    transition: all 0.3s ease-in;
+    transform: translate(100%,0);
 }
 
 aside.show{
-    display: block
+    /* display: block; */
+    transform: translate(0,0);
 }
 
 aside .close-nav{
