@@ -37,11 +37,30 @@ function getStackOverflowProfile (userId) {
       })
 }
 
+// function postPoll (data, successCallback) {
+//   axios.post('https://script.google.com/macros/s/AKfycbxGdUTBV2kCi0Z0gfvo28QgDXy3IlIgqP75W6lVVVmZSgSof6i4/exec', data)
+//   .then(function (response) {
+//     successCallback(response)
+//   })
+//   .catch(function (error) {
+//     console.log(error)
+//   })
+// }
+
+function postPoll (data, successCallback) {
+  console.log(data, 'aca esta la data')
+  fetch('https://script.google.com/macros/s/AKfycbxGdUTBV2kCi0Z0gfvo28QgDXy3IlIgqP75W6lVVVmZSgSof6i4/exec',
+   {method: 'POST', body: data})
+  .then(response => console.log('Success!', response))
+  .catch(error => console.error('Error!', error.message))
+}
+
 module.exports = {
   getUserData: function () {
     return getUserData('valecarlos')
   },
   getStackOverflowProfile: function () {
     return getStackOverflowProfile('4224574')
-  }
+  },
+  postPoll
 }

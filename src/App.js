@@ -11,14 +11,22 @@ class App extends Component {
     super(props)
 
     this.state = {
-      sidebarVisible: false
+      sidebarVisible: false,
+      voteCast: false
     }
 
     this.changeSideBarVisibility = this.changeSideBarVisibility.bind(this)
+    this.changeCastState = this.changeCastState.bind(this)
   }
   changeSideBarVisibility (isVisible) {
     this.setState({
       sidebarVisible: isVisible
+    })
+  }
+
+  changeCastState () {
+    this.setState({
+      voteCast: true
     })
   }
   render () {
@@ -28,7 +36,7 @@ class App extends Component {
         <Projects />
         <About />
         <Footer />
-        <Sidebar sidebarVisible={this.state.sidebarVisible} changeSideBarVisibility={this.changeSideBarVisibility}/>
+        <Sidebar {...this.state} changeSideBarVisibility={this.changeSideBarVisibility} changeCastState={this.changeCastState}/>
       </div>
     )
   }

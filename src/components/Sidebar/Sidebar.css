@@ -31,6 +31,15 @@ aside{
     transform: translate(100%,0);
 }
 
+aside .submitPoll{
+    padding: 15px;
+    width: 100%;    
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 14px;
+    background: rgb(0, 204, 255);
+}
 aside.show{
     /* display: block; */
     transform: translate(0,0);
@@ -120,10 +129,21 @@ aside .poll-options{
     color: white;
 }
 
+
 aside .poll-options li{
     width: 33.33334%;
     display: inline-block;
     background-color: rgba(0,0,0,0.3);
+}
+
+aside .poll-options.vote-cast li{
+    background-color: rgba(0,0,0,0.6);
+    color: #3B3B3B;
+    
+}
+
+aside .poll-options.vote-cast li input[type=radio] + label{
+    cursor: not-allowed;
 }
 
 aside .poll-options li:hover{
