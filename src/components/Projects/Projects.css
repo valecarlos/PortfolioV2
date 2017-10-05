@@ -36,7 +36,6 @@
     padding: 0px 20px 20px 20px;
 }
 
-
 .right-wrapper{
     width: calc(50% - 80px);
     margin: 40px;
@@ -53,13 +52,36 @@
     background-image: url('./../../assets/img/applications.png');
 }
 
+@media only screen and (max-width: 600px){
+    .first-box{
+        width: 100%;
+        float: none;
+        height: 250px;
+        margin: 0px 0px 25px;
+    }
+
+    .right-wrapper{
+        width: 100%;
+        float: none;
+        height: auto;
+        margin: 0px 0px 15px;
+    }
+
+    .second-box{
+        display: block;
+        margin-bottom: 25px;
+        position: relative;
+        height: 250px;
+    }
+}
 
 .second-box{
+    display: block;
     margin-bottom: 10px;
     position: relative;
     height: 250px;
     background-image: url('./../../assets/img/websites.png');
-     background-size: cover; 
+    background-size: cover; 
 }
 
 .third-box{
@@ -87,11 +109,11 @@
 /******animacion  */
 
 .resp-animation{
-	margin: auto;
+	margin: 12px auto 0px auto;
 	margin-bottom: 30px;
 	overflow: hidden;
-	height: 200px;
-	width: 300px;
+	height: 160px;
+	width: 225px;
 	background-color: white;
 	text-align: center;
 	animation-name: resp;
@@ -139,10 +161,10 @@
 	border-radius: 2px;
 }
 
-.resp-animation .resp-content{
+.resp-animation .resp-content{ 
 	height: 60px;
 	width: 20%;
-	min-width: 80px;
+	min-width: 65px;
 	display: inline-block;
 	background-color: blue;
 	margin: 2px;
@@ -179,19 +201,19 @@
 }
 
 @keyframes resp{
-  0%   {width:300px; border-radius: 0px;}
-  26.6%   {width:300px; border-radius: 0px;}
-  36.6%   {width:210px; border-radius: 3px;}
-  63.2%   {width:210px; border-radius: 3px;}
-  73.2% {width:130px; border-radius: 6px;}
-  100% {width:130px; border-radius: 6px;}
+  0%   {width:225px; border-radius: 0px;}
+  26.6%   {width:225px; border-radius: 0px;}
+  36.6%   {width:190px; border-radius: 3px;}
+  63.2%   {width:190px; border-radius: 3px;}
+  73.2% {width:110px; border-radius: 6px;}
+  100% {width:110px; border-radius: 6px;}
 }
 
 @keyframes ani-resp-con{
   0%   {width:20%;}
   26.6%   {width:20%;}
-  36.6%   {width:45%;}
-  63.2%   {width:45%;}
+  36.6%   {width:40%;}
+  63.2%   {width:40%;}
   73.2% {width:80%;}
   100% {width:80%;}
 }
@@ -203,4 +225,50 @@
   63.2%   {visibility:visible;}
   73.2% {visibility:visible;}
   100% {visibility:visible;}
+}
+
+@media only screen and (max-width: 1200px){
+    .projects-wrapper{
+        background: url('./../../assets/img/title-pattern.png');
+        background-attachment: fixed;
+        padding: 0px 20px 20px 20px;
+    }
+    .first-box{
+        width: 100%;
+        float: none;
+        height: 250px;
+        margin: 0px auto 25px auto;
+        max-width: 800px;
+    }
+
+    .right-wrapper{
+        width: 100%;
+        float: none;
+        height: auto;
+        margin: 0px auto 15px auto;
+        max-width: 800px;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .projects-wrapper{
+        padding: 0px 40px 20px 40px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .third-box{
+        margin: 10px 0px 10px 0px;
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+    
+    .animation-box{
+        margin: 10px 0px 10px 0px;
+        width: 100%;
+        float: left;
+        height: 250px;
+        display: none;
+    }
 }

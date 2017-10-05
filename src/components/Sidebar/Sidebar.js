@@ -7,13 +7,34 @@ export default class Sidebar extends Component {
   constructor (props) {
     super(props)
     this.handleSubmit = this.handleSubmit.bind(this)
+    this.validateRadioSelection = this.validateRadioSelection.bind(this)
+
+    this.state = {
+      validationFailed: false
+    }
   }
   handleSubmit (event) {
-    const form = document.forms['submit-to-google-sheet']
     event.preventDefault()
-    let data = new FormData(form)
-    this.props.changeCastState(true)
-    api.postPoll(data)
+    if (this.validateRadioSelection()) {
+      const form = document.forms['submit-to-google-sheet']
+      let data = new FormData(form)
+      this.props.changeCastState(true)
+      api.postPoll(data)
+    }
+  }
+  validateRadioSelection () {
+    if (!document.querySelector('[name=vote]:checked')) {
+      this.setState({
+        validationFailed: true
+      })
+      setTimeout(() => {
+        this.setState({
+          validationFailed: false
+        })
+      }, 500)
+      return false
+    }
+    return true
   }
   render () {
     const voteCast = this.props.voteCast
@@ -26,7 +47,7 @@ export default class Sidebar extends Component {
         </p>
       </div>)
     } else {
-      voteStatus = (<button className="submitPoll" type="submit">
+      voteStatus = (<button className={'submitPoll ' + (this.state.validationFailed ? 'invalid-selection' : '')} type="submit">
         Submit Vote
       </button>)
     }

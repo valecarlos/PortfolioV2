@@ -20,14 +20,14 @@ export default class Projects extends Component {
               </div>
             </div>
             <div className="right-wrapper group">
-              <div className="second-box">
+              <a href="http://www.crearconciencia.org" className="second-box">
                 <div className="background-overlay">
                   <div className="centered-text">
                     <h3>Websites Design & Development</h3>
                     <p>This is a todo text</p>
                   </div>
                 </div>
-              </div>
+              </a>
 
               <div className="group">
                 <div className="animation-box">

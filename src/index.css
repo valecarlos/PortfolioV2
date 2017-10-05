@@ -46,6 +46,14 @@ a:visited{
   background: url('./assets/img/wall.jpg') -50px -50px no-repeat;
   background-size: calc(100% + 50px);
 }
+
+@media only screen and (max-width: 1290px){
+  .hero-image{
+    background: url('./assets/img/wall.jpg') no-repeat;
+    background-size: cover;
+  }
+}
+
 .transparent-overlay{
   height: 100vh;
   background: rgba(0,0,0,0.65);
@@ -84,4 +92,23 @@ a:visited{
 
 .intro-text p{
   font-size: 18px;
+}
+
+@media only screen and (max-width: 480px){
+  .intro-text{
+    left: 10%;
+    right: 5%;
+  }
+
+  .intro-text h1{
+    font-size: 40px;
+  }
+
+  .intro-text h4{
+    font-size: 24px;
+  }
+
+  .intro-text p{
+    font-size: 16px;
+  }
 }

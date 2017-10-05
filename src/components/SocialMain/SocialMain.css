@@ -11,3 +11,16 @@
     display: inline-block;
     width: 50%;
 }
+
+@media only screen and (max-width: 992px){
+    .social-main-container{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .github-social, .stackoverflow-social{
+        width: 100%;
+        margin: 20px 0px;
+    }
+}

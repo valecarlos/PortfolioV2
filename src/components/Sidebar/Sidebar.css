@@ -1,6 +1,6 @@
 .burger-menu{
-    width: 25px;
-    height: 15px;
+    width: 30px;
+    height: 25px;
     position: absolute;
     cursor: pointer;
     position: fixed;
@@ -17,7 +17,6 @@
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
 }
 aside{
-    /* display: none; */
     position: fixed;
     width: 400px;
     background: url('./../../assets/img/title-pattern.png');
@@ -31,14 +30,24 @@ aside{
     transform: translate(100%,0);
 }
 
+@media only screen and (max-width: 768px){
+    aside{
+        max-width: 320px;
+    }
+    aside .poll-container{
+        display: none;
+    }
+}
+
 aside .submitPoll{
-    padding: 15px;
+    padding: 20px 15px;
     width: 100%;    
     outline: none;
     border: none;
     color: white;
     font-size: 14px;
     background: rgb(0, 204, 255);
+    cursor: pointer;
 }
 aside.show{
     /* display: block; */
@@ -168,6 +177,29 @@ aside .poll-options li input[type=radio]:checked + label{
 aside .poll-alert{
     color: white;
     background-color: #43c265;
-    padding: 15px 10px;
+    padding: 10px 10px;
     font-size: 14px;
+}
+
+.invalid-selection{
+    animation-name: shakeIt;
+    animation-duration: 0.3s;
+}
+
+@keyframes shakeIt {
+    0% {
+        transform: translate3d(-10px, 0px, 0px)
+    }
+    25% {
+        transform: translate3d(10px, 0px, 0px)
+    }
+    50% {
+        transform: translate3d(-10px, 0px, 0px)
+    }
+    75% {
+        transform: translate3d(10px, 0px, 0px)
+    }
+    100%{
+        transform: translate3d(0px, 0px, 0px)
+    }
 }

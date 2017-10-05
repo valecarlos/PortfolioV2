@@ -9,3 +9,16 @@
     font-size: 48px;
     color: #d8d8d8;
 }
+
+@media only screen and (max-width: 768px){
+    .personal-email{
+        margin-top: 25px;
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .personal-email{
+        font-size: 22px;
+    }
+}

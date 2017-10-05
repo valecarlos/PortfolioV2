@@ -37,3 +37,18 @@
     height: 40px;
     margin-right: 5px; 
 }
+
+@media only screen and (max-width: 992px){
+    .about-container{
+        background: white;
+        text-align: center;
+        padding-top: 45px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .about-text{
+        width: 100%;
+        padding: 0px 20px;
+    }
+}
