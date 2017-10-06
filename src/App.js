@@ -5,6 +5,7 @@ import Projects from './components/Projects/Projects'
 import About from './components/About/About'
 import Footer from './components/Footer/Footer'
 import Sidebar from './components/Sidebar/Sidebar'
+import UnderConstruction from './components/UnderConstruction/UnderConstruction'
 
 class App extends Component {
   constructor (props) {
@@ -12,11 +13,13 @@ class App extends Component {
 
     this.state = {
       sidebarVisible: false,
-      voteCast: false
+      voteCast: false,
+      UnderConstructionVisible: true
     }
 
     this.changeSideBarVisibility = this.changeSideBarVisibility.bind(this)
     this.changeCastState = this.changeCastState.bind(this)
+    this.closeUnderConstruction = this.closeUnderConstruction.bind(this)
   }
   changeSideBarVisibility (isVisible) {
     this.setState({
@@ -29,9 +32,18 @@ class App extends Component {
       voteCast: true
     })
   }
+
+  closeUnderConstruction () {
+    this.setState({
+      UnderConstructionVisible: false
+    })
+  }
   render () {
     return (
       <div className="App">
+        {this.state.UnderConstructionVisible > 0 &&
+          <UnderConstruction {...this.state} closeUnderConstruction={this.closeUnderConstruction}/>
+      }
         <Hero />
         <Projects />
         <About />
