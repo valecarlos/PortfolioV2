@@ -1,13 +1,29 @@
 .footer-container{
     padding: 25px;
     background: url(/static/media/title-pattern.9a30e6c6.png);
-    height: 320px;
 }
 
 .personal-email{
     margin-top: 35px;
     font-size: 48px;
     color: #d8d8d8;
+}
+
+.social-footer-container{
+    color: white;
+    font-size: 18px;
+    margin: 20px 0px;
+}
+
+.social-footer-container li {
+    display: inline-block;
+    padding: 10px;
+    margin: 0px 5px;
+    transition: 0.3 all ease-in;
+}
+
+.social-footer-container li:hover {
+    background-color: rgba(0,0,0,0.6)
 }
 
 @media only screen and (max-width: 768px){

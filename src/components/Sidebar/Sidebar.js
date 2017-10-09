@@ -100,13 +100,19 @@ export default class Sidebar extends Component {
             </div>
             <ul className="social-container">
               <li>
-                <a href="#">G</a>
+                <a href="https://github.com/valecarlos">
+                  <i className="fa fa-github" aria-hidden="true"></i>
+                </a>
               </li>
               <li>
-                <a href="#">L</a>
+                <a href="https://stackoverflow.com/users/4224574/randomguy04">
+                  <i className="fa fa-stack-overflow" aria-hidden="true"></i>
+                </a>
               </li>
               <li>
-                <a href="#">S</a>
+                <a href="https://www.linkedin.com/in/carlos-frontend/">
+                  <i className="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
               </li>
             </ul>
         </aside>
