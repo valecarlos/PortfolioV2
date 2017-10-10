@@ -109,6 +109,11 @@ aside .social-container li{
     width: 33.33334%;
     display: inline-block;
 }
+
+aside .social-container li:hover{
+    background-color: rgba(0,0,0,0.6);
+}
+
 aside .social-container li a{
     display: block;
     padding: 10px;

@@ -15,7 +15,7 @@ export default class Projects extends Component {
               <div className="background-overlay">
                 <div className="centered-text">
                   <h3>Application Development</h3>
-                  <p>This is a todo text</p>
+                  <p>Products, Admin Dashboards and more</p>
                 </div>
               </div>
             </div>
@@ -24,7 +24,7 @@ export default class Projects extends Component {
                 <div className="background-overlay">
                   <div className="centered-text">
                     <h3>Websites Design & Development</h3>
-                    <p>This is a todo text</p>
+                    <p>Static and CMS based Websites</p>
                   </div>
                 </div>
               </a>
@@ -50,8 +50,8 @@ export default class Projects extends Component {
                 <div className="third-box">
                   <div className="background-overlay">
                     <div className="centered-text">
-                      <h3>Resources Development</h3>
-                      <p>This is a todo text</p>
+                      <h3>Widget Development</h3>
+                      <p>Easy to use in your own projects</p>
                     </div>
                   </div>
                 </div>
