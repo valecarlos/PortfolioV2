@@ -1,6 +1,6 @@
 .footer-container{
     padding: 25px;
-    background: url(/static/media/title-pattern.9a30e6c6.png);
+    background: url('./../../assets/img/title-pattern.png');
 }
 
 .personal-email{
