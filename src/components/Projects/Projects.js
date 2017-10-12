@@ -47,14 +47,14 @@ export default class Projects extends Component {
                     <div className="resp-content"></div>
                   </div>
                 </div>
-                <div className="third-box">
+                <a href="https://valecarlos.github.io/div-slider/" className="third-box">
                   <div className="background-overlay">
                     <div className="centered-text">
                       <h3>Widget Development</h3>
                       <p>Easy to use in your own projects</p>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
