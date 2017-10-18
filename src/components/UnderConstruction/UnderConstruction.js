@@ -11,7 +11,7 @@ export default class UnderConstruction extends Component {
                 <label htmlFor="more-info-check">More Info...</label>
                 <div className="info-extended">
                     Thanks for visiting! There are still some missing links in the projects section,
-                    and some responsive functionality I need to fix. This website is hosted on a free Heroku tier which is why it takes a while to load.
+                    and some responsive functionality about the hero image I need to fix. last updated on 10/12/2017 (DD/MM/YYY).
                 </div>
             </div>
           <div className="close-uc" onClick={this.props.closeUnderConstruction}></div>
