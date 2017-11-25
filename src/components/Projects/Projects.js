@@ -11,14 +11,14 @@ export default class Projects extends Component {
             <Titles titleText={titleText} />
           </div>
           <div className="projects-wrapper group">
-            <div className="first-box">
+            <a href="https://valecarlos.github.io/admin-dashboard/" className="first-box">
               <div className="background-overlay">
                 <div className="centered-text">
                   <h3>Application Development</h3>
                   <p>Products, Admin Dashboards and more</p>
                 </div>
               </div>
-            </div>
+            </a>
             <div className="right-wrapper group">
               <a href="http://www.crearconciencia.org" className="second-box">
                 <div className="background-overlay">

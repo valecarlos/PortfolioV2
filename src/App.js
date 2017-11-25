@@ -6,6 +6,7 @@ import About from './components/About/About'
 import Footer from './components/Footer/Footer'
 import Sidebar from './components/Sidebar/Sidebar'
 import UnderConstruction from './components/UnderConstruction/UnderConstruction'
+import GaScript from './utils/gaScript'
 
 class App extends Component {
   constructor (props) {
@@ -20,6 +21,13 @@ class App extends Component {
     this.changeSideBarVisibility = this.changeSideBarVisibility.bind(this)
     this.changeCastState = this.changeCastState.bind(this)
     this.closeUnderConstruction = this.closeUnderConstruction.bind(this)
+  }
+  componentWillMount () {
+    if (process.env.NODE_ENV === 'production') { // run only if on build
+      GaScript()
+    } else if (process.env.NODE_ENV === 'development') {
+      console.log('not logging to Googla analytics, this is the dev env')
+    }
   }
   changeSideBarVisibility (isVisible) {
     this.setState({
