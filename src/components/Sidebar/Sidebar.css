@@ -124,6 +124,10 @@ aside .poll-container{
     margin-top: 80px;
 }
 
+body.touch-device aside .poll-container{
+    display: none;
+}
+
 aside .poll-container p{
     padding: 10px;
     font-size: 14px;
