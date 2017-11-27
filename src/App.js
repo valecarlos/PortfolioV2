@@ -15,12 +15,14 @@ class App extends Component {
     this.state = {
       sidebarVisible: false,
       voteCast: false,
-      UnderConstructionVisible: true
+      UnderConstructionVisible: true,
+      isTouch: false // false until told otherwise
     }
 
     this.changeSideBarVisibility = this.changeSideBarVisibility.bind(this)
     this.changeCastState = this.changeCastState.bind(this)
     this.closeUnderConstruction = this.closeUnderConstruction.bind(this)
+    this.touchStartHandler = this.touchStartHandler.bind(this)
   }
   componentWillMount () {
     if (process.env.NODE_ENV === 'production') { // run only if on build
@@ -46,13 +48,28 @@ class App extends Component {
       UnderConstructionVisible: false
     })
   }
+
+  componentDidMount () {
+    document.body.addEventListener('touchstart', this.touchStartHandler)
+  }
+  componentWillUnmount () {
+    document.body.removeEventListener('touchstart', this.touchStartHandler)
+  }
+  touchStartHandler () {
+    document.body.classList.add('touch-device')
+    console.log('touch start')
+    document.body.removeEventListener('touchstart', this.touchStartHandler) // stop listening to it
+    this.setState({
+      isTouch: true
+    })
+  }
   render () {
     return (
       <div className="App">
         {this.state.UnderConstructionVisible > 0 &&
           <UnderConstruction {...this.state} closeUnderConstruction={this.closeUnderConstruction}/>
       }
-        <Hero />
+        <Hero {...this.state}/>
         <Projects />
         <About />
         <Footer />

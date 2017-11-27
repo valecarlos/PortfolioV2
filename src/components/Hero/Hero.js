@@ -7,6 +7,9 @@ export default class hero extends Component {
     this.handleMouseMove = this.handleMouseMove.bind(this)
   }
   handleMouseMove (e) {
+    if (this.props.isTouch === true) {
+      return
+    }
     let myHero = document.querySelector('.hero-image')
     let movementStrength = 25
     let width = myHero.clientWidth

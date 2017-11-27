@@ -43,8 +43,15 @@ a:visited{
 .hero-image{
   height: 100vh;
   position: relative;
-  background: url('./assets/img/wall.jpg') -50px -50px no-repeat;
+  background: url('./assets/img/wall.jpg') no-repeat;
+  background-position: -50px -50px;
   background-size: calc(100% + 50px);
+}
+
+body.touch-device .hero-image{
+  transition: all 0.1s ease-in;
+  background-position: 0px 0px!important;
+  background-size: cover;
 }
 
 @media only screen and (max-width: 1290px){
