@@ -10,8 +10,8 @@ export default class UnderConstruction extends Component {
                 <input type="checkbox" id="more-info-check"/>
                 <label htmlFor="more-info-check">More Info...</label>
                 <div className="info-extended">
-                    Thanks for visiting! There are still some missing links in the projects section,
-                    and some responsive functionality about the hero image I need to fix. last updated on 10/12/2017 (DD/MM/YYY).
+                    Thanks for visiting! In the projects section you will find a link to an on-going project under 'Application Development'
+                    this project is not complete yet.
                 </div>
             </div>
           <div className="close-uc" onClick={this.props.closeUnderConstruction}></div>

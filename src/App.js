@@ -15,7 +15,7 @@ class App extends Component {
     this.state = {
       sidebarVisible: false,
       voteCast: false,
-      UnderConstructionVisible: true,
+      UnderConstructionVisible: false,
       isTouch: false // false until told otherwise
     }
 
