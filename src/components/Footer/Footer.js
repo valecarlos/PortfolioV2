@@ -5,11 +5,9 @@ import Titles from './../Titles/Titles'
 export default class Footer extends Component {
   render () {
     var titleText = 'CONTACT'
-    var personalEmail = 'carlos_valencia@live.com'
     return (
       <div className="footer-container" id="contact">
           <Titles titleText={titleText} />
-          <p className="personal-email">{personalEmail}</p>
           <div>
             <ul className="social-footer-container">
               <li>

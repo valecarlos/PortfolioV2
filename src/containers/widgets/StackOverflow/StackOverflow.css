@@ -20,6 +20,16 @@
     display: inline-block;
     margin: 0px 10px;
 }
+
+.goldBadge{
+    display: inline-block;
+    background-color: #f1b600;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 2px;
+}
+
 .silverBadge{
     display: inline-block;
     background-color: #B4B8BC;

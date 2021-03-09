@@ -1,56 +1,82 @@
-import React, {Component} from 'react'
-import './StackOverflow.css'
-import api from './../../../utils/api'
-import StackOverflowLogo from './../../../assets/img/so-logo.svg'
+import React, { Component } from "react";
+import "./StackOverflow.css";
+import api from "./../../../utils/api";
+import StackOverflowLogo from "./../../../assets/img/so-logo.svg";
 
 export default class StackOverflow extends Component {
-  constructor (props) {
-    super(props)
+  constructor(props) {
+    super(props);
 
     this.state = {
-      profile: null
-    }
+      profile: null,
+    };
 
-    this.getStackOverflowInfo = this.getStackOverflowInfo.bind(this)
+    this.getStackOverflowInfo = this.getStackOverflowInfo.bind(this);
   }
 
-  componentDidMount () {
+  componentDidMount() {
     // invoked whenever the component is mount to the screen/shown to the view
     // AJAX
-    this.getStackOverflowInfo(this.state.selectedLanguage)
+    this.getStackOverflowInfo(this.state.selectedLanguage);
   }
 
-  getStackOverflowInfo () {
-    api.getStackOverflowProfile()
-      .then(function (profile) {
-        console.log(profile, 'got the profile from SO')
+  getStackOverflowInfo() {
+    api.getStackOverflowProfile().then(
+      function (profile) {
+        console.log(profile, "got the profile from SO");
         this.setState(function () {
           return {
-            profile
-          }
-        })
-      }.bind(this))
+            profile,
+          };
+        });
+      }.bind(this)
+    );
   }
-  render () {
+  render() {
     return (
-      <a href="https://stackoverflow.com/users/4224574/randomguy04" className="stackoverflow-container">
+      <a
+        href="https://stackoverflow.com/users/4224574/randomguy04"
+        className="stackoverflow-container"
+      >
         <div>
-          <img className="stackoverflow-logo" src={StackOverflowLogo} alt="StackOverflow logo"/>
+          <img
+            className="stackoverflow-logo"
+            src={StackOverflowLogo}
+            alt="StackOverflow logo"
+          />
         </div>
         <div className="stackoverflow-info">
-          <div className="reputation">{this.state.profile ? this.state.profile.reputation : 0}</div>
+          <div className="reputation">
+            {this.state.profile ? this.state.profile.reputation : 0}
+          </div>
           <div className="badges">
             <div className="badge">
-                <span className="silverBadge"></span>
-                <span>{this.state.profile ? this.state.profile.badge_counts.silver : 0}</span>
-                </div>
+              <span className="goldBadge"></span>
+              <span>
+                {this.state.profile
+                  ? this.state.profile.badge_counts.gold
+                  : 0}
+              </span>
+            </div>
             <div className="badge">
-                <span className="bronzeBadge"></span>
-                <span>{this.state.profile ? this.state.profile.badge_counts.bronze : 0}</span>
+              <span className="silverBadge"></span>
+              <span>
+                {this.state.profile
+                  ? this.state.profile.badge_counts.silver
+                  : 0}
+              </span>
+            </div>
+            <div className="badge">
+              <span className="bronzeBadge"></span>
+              <span>
+                {this.state.profile
+                  ? this.state.profile.badge_counts.bronze
+                  : 0}
+              </span>
             </div>
           </div>
         </div>
       </a>
-    )
+    );
   }
 }

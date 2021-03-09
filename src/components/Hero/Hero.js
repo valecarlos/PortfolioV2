@@ -23,14 +23,14 @@ export default class hero extends Component {
   }
   render () {
     return (
-      <div className="hero-image">
+      <div className="hero-image" id="top">
         <div className="transparent-overlay" onMouseMove={this.handleMouseMove}>
           <div className="cvslogo">
             <img src={logo} alt="Carlos Valencia Logo"/>
           </div>
           <div className="intro-text">
             <h1 className="main-font-color">CARLOS VALENCIA</h1>
-            <h4 className="second-font-color">FRONT END DEVELOPER</h4>
+            <h4 className="second-font-color">FULL STACK DEVELOPER</h4>
             <p className="second-font-color">STRIVING TO DELIVER TOP-QUALITY SOLUTIONS</p>
           </div>
         </div>

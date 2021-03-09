@@ -65,8 +65,11 @@ export default class Sidebar extends Component {
               <img src={logo} alt="Carlos Valencia Logo"/>
             </div>
             <ul className="aside-links">
-              <li>
+              {/* <li>
                 <a href="#projects">Projects</a>
+              </li> */}
+              <li>
+                <a href="#top">Top</a>
               </li>
               <li>
                 <a href="#about">About</a>
@@ -95,7 +98,9 @@ export default class Sidebar extends Component {
                     <label htmlFor="up">Love it!</label>
                   </li>
                 </ul>
-                {voteStatus}
+                <div className="vote-container">
+                  {voteStatus}
+                </div>
               </form>
             </div>
             <ul className="social-container">

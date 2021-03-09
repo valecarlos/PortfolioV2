@@ -234,3 +234,8 @@ aside .poll-alert{
         width: auto;
     }
 }
+
+.vote-container{
+    width: 100%;
+    overflow: hidden;
+}

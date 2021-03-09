@@ -70,7 +70,7 @@ class App extends Component {
           <UnderConstruction {...this.state} closeUnderConstruction={this.closeUnderConstruction}/>
       }
         <Hero {...this.state}/>
-        <Projects />
+        {/* <Projects /> */}
         <About />
         <Footer />
         <Sidebar {...this.state} changeSideBarVisibility={this.changeSideBarVisibility} changeCastState={this.changeCastState}/>
